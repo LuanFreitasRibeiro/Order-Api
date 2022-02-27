@@ -1,0 +1,17 @@
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Respository.deps.json
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Respository.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\ref\Orders.Respository.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Respository.pdb
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Data.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Domain.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Data.pdb
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\bin\Debug\net5.0\Orders.Domain.pdb
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.csproj.AssemblyReference.cache
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.AssemblyInfo.cs
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.csproj.CopyComplete
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\ref\Orders.Respository.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Respository\obj\Debug\net5.0\Orders.Respository.pdb

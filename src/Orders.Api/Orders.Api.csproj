@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<UserSecretsId>f1344553-87c9-4348-9928-ddf9ee2a8789</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.13" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.13">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Orders.AppService\Orders.AppService.csproj" />
+		<ProjectReference Include="..\Orders.Data\Orders.Data.csproj" />
+		<ProjectReference Include="..\Orders.Domain\Orders.Domain.csproj" />
+		<ProjectReference Include="..\Orders.Respository\Orders.Respository.csproj" />
+	</ItemGroup>
+
+</Project>

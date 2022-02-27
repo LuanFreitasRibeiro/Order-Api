@@ -1,0 +1,15 @@
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\Orders.AppService.deps.json
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\Orders.AppService.dll
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\ref\Orders.AppService.dll
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\Orders.AppService.pdb
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\Orders.Domain.dll
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\bin\Debug\net5.0\Orders.Domain.pdb
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.csproj.AssemblyReference.cache
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.AssemblyInfoInputs.cache
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.AssemblyInfo.cs
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.csproj.CoreCompileInputs.cache
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.csproj.CopyComplete
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.dll
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\ref\Orders.AppService.dll
+C:\Users\luann\source\repos\Orders\src\Orders.AppService\obj\Debug\net5.0\Orders.AppService.pdb

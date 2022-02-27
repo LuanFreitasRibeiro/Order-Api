@@ -1,0 +1,29 @@
+---
+  version: "3.8"
+  services:
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        container_name: sqlserver
+        ports:
+          - 1433:1433
+        environment:
+          ACCEPT_EULA: "Y"
+          SA_PASSWORD: "yourStrong(!)Password"
+
+      ordersapi:
+        container_name: orders-api
+        image: luanfreitas/ordersapi
+        build:
+          context: .
+        networks:
+          - ordersapi-net
+        depends_on:
+          - sqlserver
+        restart: unless-stopped
+        ports:
+          - 49156:80
+          - 49157:443
+
+  networks:
+    ordersapi-net:
+      driver: bridge

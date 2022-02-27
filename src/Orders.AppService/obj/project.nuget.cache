@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "BLd1J+l6ESArWdsBJEa/n4ZNxNchgmUwcWcK01iSZ0tBY1yGISd8q2ucq/kUgjqzCwka8xfO475iUt7qivLyOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luann\\source\\repos\\Orders\\src\\Orders.AppService\\Orders.AppService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luann\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\luann\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

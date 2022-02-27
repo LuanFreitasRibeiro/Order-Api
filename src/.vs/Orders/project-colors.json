@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "32286bc7-21d8-4652-93d5-384338924a4b": {
+      "ProjectGuid": "32286bc7-21d8-4652-93d5-384338924a4b",
+      "DisplayName": "Orders.Domain",
+      "ColorIndex": 0
+    },
+    "58e02f1d-090d-414f-a058-d1185a5e76d1": {
+      "ProjectGuid": "58e02f1d-090d-414f-a058-d1185a5e76d1",
+      "DisplayName": "Orders.AppService",
+      "ColorIndex": 1
+    },
+    "159bb07b-36c2-48a4-80ba-b5b2eb1695b0": {
+      "ProjectGuid": "159bb07b-36c2-48a4-80ba-b5b2eb1695b0",
+      "DisplayName": "Orders.Respository",
+      "ColorIndex": 2
+    },
+    "5c8bfee9-f2db-4a2a-862d-10b248cc80ea": {
+      "ProjectGuid": "5c8bfee9-f2db-4a2a-862d-10b248cc80ea",
+      "DisplayName": "Orders.Data",
+      "ColorIndex": 3
+    },
+    "f3d87249-5351-4339-8b65-91a0d40e373c": {
+      "ProjectGuid": "f3d87249-5351-4339-8b65-91a0d40e373c",
+      "DisplayName": "Orders.Api",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
