@@ -1,4 +1,6 @@
 using AutoMapper;
+using FluentValidation;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -7,10 +9,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Orders.AppService.Services;
+using Orders.AppService.Validators;
 using Orders.Data;
 using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models;
+using Orders.Domain.Models.Request.Customer;
 using Orders.Domain.Models.Request.Order;
 using Orders.Domain.Models.Response.CustomerResponse;
 using Orders.Domain.Models.Response.OrderResponse;
@@ -43,8 +47,7 @@ namespace Orders.Api
                 cfg.CreateMap<OrderRequest, Order>();
                 cfg.CreateMap<Order, OrderRequest>();
                 cfg.CreateMap<Order, CreateOrderResponse>();
-                cfg.CreateMap<CustomerOrdersResponse, Order>()
-                .ForMember(dest => dest.CustomerId, opt => opt.Ignore());
+
             });
 
             IMapper mapper = config.CreateMapper();
@@ -55,6 +58,9 @@ namespace Orders.Api
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IOrderService, OrderService>();
+
+            services.AddSingleton<IValidator<CustomerRequest>, CreateCustomerValidator>();
+            services.AddSingleton<IValidator<OrderRequest>, CreateOrderValidator>();
 
             services.AddSwaggerGen(c =>
             {
