@@ -5,7 +5,7 @@
 variables:
   organization: 'luanfreitasribeiro'
   solution_path: 'src/Orders.sln'
-  main_project_path: 'src/Orders.Api.csproj'
+  main_project_path: 'src/Orders.Api/Orders.Api.csproj'
   main_project_name: 'Orders.Api'
   execute_test: 'true'
   test_project_base_folder: 'src/Orders.Tests'
