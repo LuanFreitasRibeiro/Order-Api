@@ -36,6 +36,7 @@
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore": "5.0.13",
           "Microsoft.EntityFrameworkCore.Design": "5.0.13",
+          "Microsoft.Extensions.DependencyInjection": "5.0.2",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.14.0",
           "Orders.AppService": "1.0.0",
           "Orders.Data": "1.0.0",
@@ -343,6 +344,31 @@
         },
         "compile": {
           "lib/netstandard2.1/AutoMapper.dll": {}
+        }
+      },
+      "Extensions.FluentValidation.Br/1.0.2": {
+        "dependencies": {
+          "FluentValidation": "10.0.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {
+            "assemblyVersion": "1.0.0.2",
+            "fileVersion": "1.0.0.2"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.Extensions.Br.dll": {}
+        }
+      },
+      "FluentValidation/10.0.4": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.0.4.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2257,6 +2283,8 @@
       "Orders.AppService/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
+          "Extensions.FluentValidation.Br": "1.0.2",
+          "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Orders.Domain": "1.0.0"
         },
         "runtime": {
@@ -4001,6 +4029,20 @@
       "sha512": "sha512-WIadGC1pIwbnyTubvI577p3F++Bsj9q2Q3OaAc1I0QS+JhupN1xkdrPBhI9bPIeg63zM81tZplUNYkqU1HE5jQ==",
       "path": "automapper/11.0.1",
       "hashPath": "automapper.11.0.1.nupkg.sha512"
+    },
+    "Extensions.FluentValidation.Br/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZVoXpIFkUhufHoO3/MkdIMZU0+8Mjy1K9TNd0zroT/J92SqU8V/ryZqVn4Mdbeq2aAC5yrtAhowg8Vd+FjSCSw==",
+      "path": "extensions.fluentvalidation.br/1.0.2",
+      "hashPath": "extensions.fluentvalidation.br.1.0.2.nupkg.sha512"
+    },
+    "FluentValidation/10.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LqEYHuF5gXBJzG9/aUQS50TJP5cZgh/twvPLV7iTtFFGF6isGBkNXOhr9VwmSjlFRIVOqcMtkGuHwuPbU+XpoQ==",
+      "path": "fluentvalidation/10.0.4",
+      "hashPath": "fluentvalidation.10.0.4.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

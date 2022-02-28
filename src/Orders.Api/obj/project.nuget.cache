@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B58+bETVnXolKUxo4QrFSplcAvs1oPtBlOphH75fASjVJHBNpMblXsgCnPNTNmGibeT4DQ/eob4PL8VvOdfCbw==",
+  "dgSpecHash": "kcG7eaSvNEpQNH92i9/xvX6iS1IdsuAQ+NvHkpEHzQfw1IDcq1Lcz70Xtya+iXIatHUfCWjE3tETxu9r95FnqQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\luann\\source\\repos\\Orders\\src\\Orders.Api\\Orders.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luann\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\luann\\.nuget\\packages\\extensions.fluentvalidation.br\\1.0.2\\extensions.fluentvalidation.br.1.0.2.nupkg.sha512",
+    "C:\\Users\\luann\\.nuget\\packages\\fluentvalidation\\10.0.4\\fluentvalidation.10.0.4.nupkg.sha512",
     "C:\\Users\\luann\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\luann\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\luann\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

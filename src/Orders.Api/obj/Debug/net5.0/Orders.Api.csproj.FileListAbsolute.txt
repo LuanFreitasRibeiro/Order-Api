@@ -76,3 +76,5 @@ C:\Users\luann\source\repos\Orders\src\Orders.Api\obj\Debug\net5.0\Orders.Api.Ra
 C:\Users\luann\source\repos\Orders\src\Orders.Api\bin\Debug\net5.0\Humanizer.dll
 C:\Users\luann\source\repos\Orders\src\Orders.Api\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\luann\source\repos\Orders\src\Orders.Api\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Api\bin\Debug\net5.0\FluentValidation.Extensions.Br.dll
+C:\Users\luann\source\repos\Orders\src\Orders.Api\bin\Debug\net5.0\FluentValidation.dll

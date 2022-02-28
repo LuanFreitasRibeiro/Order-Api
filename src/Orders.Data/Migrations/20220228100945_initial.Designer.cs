@@ -10,7 +10,7 @@ using Orders.Data;
 namespace Orders.Data.Migrations
 {
     [DbContext(typeof(StoreDataContext))]
-    [Migration("20220227193401_initial")]
+    [Migration("20220228100945_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
