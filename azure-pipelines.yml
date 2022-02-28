@@ -10,9 +10,6 @@ variables:
   execute_test: 'true'
   test_project_base_folder: 'src/Orders.Tests'
   test_project_path: 'src/Orders.Tests/Orders.Tests.csproj'
-  execute_sonarqube: 'false'
-  sonarqube_project: 'orders-api'
-  sonarqube_account: 'Sonarqube'
 
 parameters:
 - name: STAGING_TAG
@@ -190,29 +187,3 @@ stages:
         testResultsFormat: 'XUnit'
         testResultsFiles: '$(System.DefaultWorkingDirectory)/$(test_project_base_folder)/results/result.xunit.xml'
         testRunTitle: 'Collecting Test Results'
-
-  - job: QualityAnalysis
-    dependsOn: 
-    - CheckVersion
-    - Build
-    - UnitTests
-    condition: |
-      and
-      (
-        eq(dependencies.CheckVersion.result, 'Succeeded'),
-        eq(dependencies.Build.result, 'Succeeded'),
-        in(dependencies.UnitTests.result, 'Succeeded', 'Skipped'),
-        eq(variables['execute_sonarqube'], 'true')
-      )
-    variables:
-      SonarMasterWhenTag: $[ dependencies.CheckVersion.outputs['CheckVersionTask.SonarMasterWhenTag'] ]
-      OpencoverSonar: $[ dependencies.UnitTests.outputs['UnitTestsTask.OpencoverSonar'] ]
-    steps:
-    - task: SonarCloudPrepare@1
-      inputs:
-        SonarCloud: 'SonarCloud'
-        organization: '$(organization)'
-        scannerMode: 'MSBuild'
-        projectKey: '$(sonarqube_project)'
-        projectName: 'Orders-Api'
-    - task: SonarCloudAnalyze@1
