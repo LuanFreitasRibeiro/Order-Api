@@ -18,12 +18,14 @@ namespace Orders.Respository
             _context = context;
         }
 
-        public async Task Add(Order obj)
+        public async Task<Order> Add(Order obj)
         {
             try
             {
-                _context.Orders.Add(obj);
+                var responseEntity = _context.Orders.Add(obj).Entity;
                 await _context.SaveChangesAsync();
+
+                return responseEntity;
             }
             catch (Exception)
             {

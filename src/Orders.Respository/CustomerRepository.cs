@@ -21,12 +21,14 @@ namespace Orders.Respository
             _mapper = mapper;
         }
 
-        public async Task Add(Customer obj)
+        public async Task<Customer> Add(Customer obj)
         {
             try
             {
-                _context.Customers.Add(obj);
+                var responseEntity = _context.Customers.Add(obj).Entity;
                 await _context.SaveChangesAsync();
+
+                return responseEntity;
             }
             catch (Exception)
             {
@@ -61,7 +63,10 @@ namespace Orders.Respository
                 var customerResult =  await _context.Customers
                     .Where(x => x.Id == id)
                     .AsNoTracking()
-                    .FirstAsync();
+                    .FirstOrDefaultAsync();
+
+                if(customerResult == null)
+                    return null;
 
                 var ordersResult = await _context.Orders
                     .Where(x => x.CustomerId == id)

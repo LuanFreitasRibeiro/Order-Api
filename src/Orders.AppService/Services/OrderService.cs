@@ -18,7 +18,7 @@ namespace Orders.AppService.Services
         public OrderService(IOrderRepository repository, IMapper mapper)
         {
             _repository = repository;
-            _mapper = mapper;
+            _mapper = mapper;            
         }
 
         public async Task<CreateOrderResponse> AddNewOrder(Guid customerId, OrderRequest obj)
@@ -31,9 +31,9 @@ namespace Orders.AppService.Services
                 CustomerId = customerId,
             };
 
-            await _repository.Add(order);
+            var responseAdd = await _repository.Add(order);
 
-            return _mapper.Map<CreateOrderResponse>(order);
+            return _mapper.Map<CreateOrderResponse>(responseAdd);
         }
     }
 }

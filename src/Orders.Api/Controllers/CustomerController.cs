@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Orders.AppService.Validators;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models.Request.Customer;
 using Orders.Domain.Models.Request.Order;
+using Orders.Domain.Models.Response.CustomerResponse;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Orders.Api.Controllers
@@ -19,22 +23,41 @@ namespace Orders.Api.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(CustomerResponse), 200)]
         public async Task<IActionResult> CreateCustomer([FromBody] CustomerRequest request)
         {
-            var obj = await _customerService.Add(request);
+            var createCustomerValidator = new CreateCustomerValidator().Validate(request);
+
+            if (!createCustomerValidator.IsValid)
+            {
+                foreach(var error in createCustomerValidator.Errors)
+                {
+                    return BadRequest(new { Error = error.ErrorMessage, Property = error.PropertyName });
+                }
+            }
+
+            var obj = await _customerService.CreateNewCustomer(request);
             return Created(nameof(CreateCustomer), obj);
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<CustomerResponse>), 200)]
         public async Task<IActionResult> GetCustomers()
         {
-            return Ok(await _customerService.GetAll());
+            var response = await _customerService.GetAll();
+
+            return Ok(response);
         }
 
         [HttpGet("{customerId}")]
+        [ProducesResponseType(typeof(CustomerResponse), 200)]
         public async Task<IActionResult> GetCustomerById([FromRoute] Guid customerId)
         {
             var result = await _customerService.GetById(customerId);
+
+            if(result == null)
+                return NotFound();
+
             return Ok(result);
         }
     }

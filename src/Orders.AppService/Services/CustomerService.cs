@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
+using Orders.AppService.Validators;
 using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models;
 using Orders.Domain.Models.Request.Customer;
-using Orders.Domain.Models.Request.Order;
 using Orders.Domain.Models.Response.CustomerResponse;
 using System;
 using System.Collections.Generic;
@@ -22,7 +22,7 @@ namespace Orders.AppService.Services
             _mapper = mapper;
         }
 
-        public async Task<CustomerResponse> Add(CustomerRequest obj)
+        public async Task<CustomerResponse> CreateNewCustomer(CustomerRequest obj)
         {
             var customer = new Customer()
             {
@@ -31,9 +31,9 @@ namespace Orders.AppService.Services
                 Name = obj.Name
             };
 
-            await _repository.Add(customer);
+            var responseAdd = await _repository.Add(customer);
 
-            return _mapper.Map<CustomerResponse>(customer);
+            return _mapper.Map<CustomerResponse>(responseAdd);
         }
 
         public async Task<IEnumerable<CustomerResponse>> GetAll()
