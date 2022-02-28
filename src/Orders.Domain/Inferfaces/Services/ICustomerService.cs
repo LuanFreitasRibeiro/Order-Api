@@ -9,7 +9,7 @@ namespace Orders.Domain.Inferfaces.Services
 {
     public interface ICustomerService
     {
-        Task<CustomerResponse> Add(CustomerRequest obj);
+        Task<CustomerResponse> CreateNewCustomer(CustomerRequest obj);
         Task<CustomerOrdersResponse> GetById(Guid id);
         Task<IEnumerable<CustomerResponse>> GetAll();
     }

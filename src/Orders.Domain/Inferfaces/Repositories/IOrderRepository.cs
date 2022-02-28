@@ -7,6 +7,6 @@ namespace Orders.Domain.Inferfaces.Repositories
 {
     public interface IOrderRepository
     {
-        Task Add(Order obj);
+        Task<Order> Add(Order obj);
     }
 }

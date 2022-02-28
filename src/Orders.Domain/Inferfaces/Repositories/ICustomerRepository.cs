@@ -7,7 +7,7 @@ namespace Orders.Domain.Inferfaces.Repositories
 {
     public interface ICustomerRepository
     {
-        Task Add(Customer obj);
+        Task<Customer> Add(Customer obj);
         Task<Customer> GetById(Guid id);
         Task<IEnumerable<Customer>> GetAll();
     }
