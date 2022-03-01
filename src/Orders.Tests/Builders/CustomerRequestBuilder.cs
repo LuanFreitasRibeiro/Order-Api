@@ -24,6 +24,13 @@ namespace Orders.Tests.Builders
             return this;
         }
 
+        public CustomerRequestBuilder WithoutName()
+        {
+            this._customerRequest.Email = "meu@gmail.com";
+
+            return this;
+        }
+
         public static CustomerRequestBuilder Instance()
             => new CustomerRequestBuilder();
 
