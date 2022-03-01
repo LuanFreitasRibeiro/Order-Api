@@ -50,7 +50,7 @@ namespace Orders.Api.Controllers
         }
 
         [HttpGet("{customerId}")]
-        [ProducesResponseType(typeof(CustomerResponse), 200)]
+        [ProducesResponseType(typeof(CustomerOrdersResponse), 200)]
         public async Task<IActionResult> GetCustomerById([FromRoute] Guid customerId)
         {
             var result = await _customerService.GetById(customerId);
