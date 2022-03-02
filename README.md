@@ -22,3 +22,8 @@ Para CRIAR dos Orders é necessário enviar uma requisição **POST**, para o ``
   "price": 11.59,
 }
 ```
+# Author
+
+LinkedIn: https://www.linkedin.com/in/luan-freitas-a04063113/
+E-mail: luannr16@gmail.com
+
