@@ -41,7 +41,8 @@ namespace Orders.Api
 
             services.AddControllers();
 
-            services.AddDbContext<StoreDataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            //services.AddDbContext<StoreDataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
+            services.AddDbContext<StoreDataContext>(opt => opt.UseInMemoryDatabase("OrderApi"));
             services.AddTransient<StoreDataContext, StoreDataContext>();
 
             var config = new MapperConfiguration(cfg =>
