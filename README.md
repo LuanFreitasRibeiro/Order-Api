@@ -22,9 +22,12 @@ Para CRIAR dos Orders é necessário enviar uma requisição **POST**, para o ``
   "price": 11.59,
 }
 ```
+
+# Uso 
+Para rodar a aplicação, executar o comando ```docker-compose up -d``` dentro da pasta ```src```. 
+
 # Author
 
-LinkedIn: https://www.linkedin.com/in/luan-freitas-a04063113/
+[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/luan-freitas-a04063113/)
 
-E-mail: luannr16@gmail.com
 
