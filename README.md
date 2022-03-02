@@ -29,7 +29,7 @@ Para deixar a aplicação mais simples, resolvi usar o InMemoryDatabase. Dessa f
 
 Ao executar o projeto por IIs Express, abrirá a tela do Swagger, nessa tela será possível fazer todas as requisições. 
 
-Os endpoints de Customer e User precisão de autorização para receber requisições, dessa forma basta criar seu usuário e se autenticar. Ao se autenticar pelo ```/v1/users/login```, será informado o seu token de acesso:
+Os endpoints de Customer e User precisam de autorização para receber requisições, dessa forma basta criar seu usuário e se autenticar. Ao se autenticar pelo ```/v1/users/login```, será informado o seu token de acesso:
 
 ![image](https://user-images.githubusercontent.com/42122138/156301172-ee12ffe1-591d-4c6b-af91-219f8172b5b4.png)
 
@@ -42,6 +42,15 @@ Para se autenticar e fazer as requisições dos endpoints de Customer e User, ba
 **Caso deseje**
 
 Caso queira usar via docker-compose e migrations, basta seguir os passos abaixo:
+
+Comente as linhas de código do InMemoryDatabase e descomente as linhas escritas para o SqlServer:
+
+```**Startup.cs**```
+![image](https://user-images.githubusercontent.com/42122138/156392106-39036735-53a1-434d-9166-87f7e2f78f80.png)
+
+```**StoreDataContext.cs**```
+![image](https://user-images.githubusercontent.com/42122138/156392655-37b26f3b-2b0a-4d12-9117-bdacb0769907.png)
+
 
 Para rodar a aplicação, executar o comando ```docker-compose up -d``` dentro da pasta ```src```. Por não ter conseguido configurar o docker-compose para funcionar direitinho, é necessário rodar o IIs Express para poder testar o projeto.
 
