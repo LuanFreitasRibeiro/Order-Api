@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Orders.AppService.Validators;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models.Request.Customer;
@@ -11,6 +12,7 @@ namespace Orders.Api.Controllers
 {
     [Produces("application/json")]
     [Route("v1/customer")]
+    [Authorize]
     public class CustomerController : Controller
     {
         private readonly ICustomerService _customerService;
