@@ -5,10 +5,6 @@ using Orders.Domain.Models.Request.Order;
 using Orders.Tests.Builders;
 using Orders.Tests.Mocks;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Orders.Tests.Controllers

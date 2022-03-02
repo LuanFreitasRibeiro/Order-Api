@@ -1,5 +1,4 @@
 ﻿using Orders.Domain.Models.Request.Customer;
-using Orders.Domain.Models.Request.Order;
 using Orders.Domain.Models.Response.CustomerResponse;
 using System;
 using System.Collections.Generic;

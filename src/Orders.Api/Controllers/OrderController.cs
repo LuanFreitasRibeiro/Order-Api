@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Orders.AppService.Validators;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models.Request.Order;
@@ -10,6 +11,7 @@ namespace Orders.Api.Controllers
 {
     [Produces("application/json")]
     [Route("v1/order")]
+    [Authorize]
     public class OrderController : Controller
     {
         private readonly IOrderService _orderService;

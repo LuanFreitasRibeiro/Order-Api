@@ -3,7 +3,6 @@ using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models;
 using Orders.Domain.Models.Request.Order;
-using Orders.Domain.Models.Response.CustomerResponse;
 using Orders.Domain.Models.Response.OrderResponse;
 using System;
 using System.Threading.Tasks;

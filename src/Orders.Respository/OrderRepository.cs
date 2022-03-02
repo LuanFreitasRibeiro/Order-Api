@@ -1,10 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Orders.Data;
+﻿using Orders.Data;
 using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Models;
-using Orders.Domain.Models.Response.CustomerResponse;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Orders.Respository

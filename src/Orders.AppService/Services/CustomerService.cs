@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Orders.AppService.Validators;
 using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models;

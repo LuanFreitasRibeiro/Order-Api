@@ -3,9 +3,6 @@ using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models.Request.Order;
 using Orders.Domain.Models.Response.OrderResponse;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Orders.Tests.Mocks

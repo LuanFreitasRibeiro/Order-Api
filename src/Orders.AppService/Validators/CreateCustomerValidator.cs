@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Orders.Domain.Models;
 using Orders.Domain.Models.Request.Customer;
 
 namespace Orders.AppService.Validators
