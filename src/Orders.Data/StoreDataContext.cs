@@ -15,15 +15,15 @@ namespace Orders.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<User> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=orders-database;User ID=SA;Password=yourStrong(!)Password", b =>
-            {
-                b.EnableRetryOnFailure(3, TimeSpan.FromSeconds(10), null);
-            });
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(@"Server=localhost,1433;Database=orders-database;User ID=SA;Password=yourStrong(!)Password", b =>
+        //    {
+        //        b.EnableRetryOnFailure(3, TimeSpan.FromSeconds(10), null);
+        //    });
 
-            base.OnConfiguring(optionsBuilder);
-        }
+        //    base.OnConfiguring(optionsBuilder);
+        //}
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
