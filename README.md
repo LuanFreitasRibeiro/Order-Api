@@ -25,7 +25,7 @@ Para CRIAR dos Orders é necessário enviar uma requisição **POST**, para o ``
 
 # Uso 
 
-Para deixar a aplicação mais simples resolvi usar o InMemoryDatabase, dessa forma basta clonar o repositório e rodá-lo como IIs Express.
+Para deixar a aplicação mais simples, resolvi usar o InMemoryDatabase. Dessa forma basta clonar o repositório e rodá-lo como IIs Express.
 
 Ao executar o projeto por IIs Express, abrirá a tela do Swagger, nessa tela será possível fazer todas as requisições. 
 
