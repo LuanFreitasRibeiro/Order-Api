@@ -24,9 +24,8 @@ Para CRIAR dos Orders é necessário enviar uma requisição **POST**, para o ``
 ```
 
 # Uso 
-Para rodar a aplicação, executar o comando ```docker-compose up -d``` dentro da pasta ```src```. Por não ter conseguido configurar o docker-compose para funcionar direitinho, é necessário rodar o IIs Express para poder testar o projeto.
 
-Após rodar o projeto, será necessário fazer o migrations, para isso basta entrar no diretóprio do projeto ```Orders.Data``` e executar os comandos: ```dotnet ef migrations add "nome da migração"``` e ```dotnet ef database update```. Dessa forma teremos a base de dados pronta para receber dados.
+Para deixar a aplicação mais simples resolvi usar o InMemoryDatabase, dessa forma basta clonar o repositório e rodá-lo como IIs Express.
 
 Ao executar o projeto por IIs Express, abrirá a tela do Swagger, nessa tela será possível fazer todas as requisições. 
 
@@ -40,6 +39,13 @@ Para se autenticar e fazer as requisições dos endpoints de Customer e User, ba
 
 ![image](https://user-images.githubusercontent.com/42122138/156301441-d52ce64c-665b-428b-a7e1-0cb3de110134.png)
 
+**Caso deseje**
+
+Caso queira usar via docker-compose e migrations, basta seguir os passos abaixo:
+
+Para rodar a aplicação, executar o comando ```docker-compose up -d``` dentro da pasta ```src```. Por não ter conseguido configurar o docker-compose para funcionar direitinho, é necessário rodar o IIs Express para poder testar o projeto.
+
+Após rodar o projeto, será necessário fazer o migrations, para isso basta entrar no diretóprio do projeto ```Orders.Data``` e executar os comandos: ```dotnet ef migrations add "nome da migração"``` e ```dotnet ef database update```. Dessa forma teremos a base de dados pronta para receber dados.
 
 # Author
 
