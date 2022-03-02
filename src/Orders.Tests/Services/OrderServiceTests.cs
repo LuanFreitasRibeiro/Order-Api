@@ -6,9 +6,6 @@ using Orders.Domain.Models;
 using Orders.Domain.Models.Response.OrderResponse;
 using Orders.Tests.Builders;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 

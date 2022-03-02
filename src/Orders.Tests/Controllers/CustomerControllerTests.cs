@@ -3,14 +3,9 @@ using Moq;
 using Orders.Api.Controllers;
 using Orders.Domain.Inferfaces.Services;
 using Orders.Domain.Models.Request.Customer;
-using Orders.Domain.Models.Response.CustomerResponse;
 using Orders.Tests.Builders;
 using Orders.Tests.Mocks;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace Orders.Tests.Controllers

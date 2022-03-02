@@ -5,10 +5,6 @@ using Orders.Domain.Inferfaces.Repositories;
 using Orders.Domain.Models;
 using Orders.Domain.Models.Response.CustomerResponse;
 using Orders.Tests.Builders;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
