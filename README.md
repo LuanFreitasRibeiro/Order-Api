@@ -54,7 +54,7 @@ Comente as linhas de código do InMemoryDatabase e descomente as linhas escritas
 
 Para rodar a aplicação, executar o comando ```docker-compose up -d``` dentro da pasta ```src```. Por não ter conseguido configurar o docker-compose para funcionar direitinho, é necessário rodar o IIs Express para poder testar o projeto.
 
-Após rodar o projeto, será necessário fazer o migrations, para isso basta entrar no diretóprio do projeto ```Orders.Data``` e executar os comandos: ```dotnet ef migrations add "nome da migração"``` e ```dotnet ef database update```. Dessa forma teremos a base de dados pronta para receber dados.
+Após rodar o projeto, será necessário fazer o migrations. Para isso, basta entrar no diretóprio do projeto ```Orders.Data``` e executar os comandos: ```dotnet ef migrations add "nome da migração"``` e ```dotnet ef database update```. Dessa forma teremos a base de dados pronta para receber dados.
 
 # Author
 
