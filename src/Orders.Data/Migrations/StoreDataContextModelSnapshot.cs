@@ -62,6 +62,27 @@ namespace Orders.Data.Migrations
                     b.ToTable("Order");
                 });
 
+            modelBuilder.Entity("Orders.Domain.Models.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(65)
+                        .HasColumnType("varchar(65)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
+                });
+
             modelBuilder.Entity("Orders.Domain.Models.Order", b =>
                 {
                     b.HasOne("Orders.Domain.Models.Customer", "Customer")
